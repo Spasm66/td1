@@ -1,19 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int pow2for(int n)
+int pow2while(int n)
 {
     int res;
+    int x;
 
     res = 1;
-    for (int x = 0; x < n; x++)
+    x = 0;
+    while (x < n)
     {
         res = res * 2;
+        x++;
     }
     return (res);
 }
 
 int main(int argc, char **argv)
 {
-    printf("%d\n", pow2for(atoi(argv[1])));
+    printf("%d\n", pow2while(atoi(argv[1])));
 }
